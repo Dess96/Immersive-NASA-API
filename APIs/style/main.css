@@ -1,0 +1,95 @@
+html {
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    margin: 0;
+    background-image: url("nebula.jpg");
+    background-size: cover;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    background-color: #373b42;
+}
+
+img {
+    height: 30rem;
+    width: 30rem;
+}
+
+.img-div {
+    background-color: rgba(120, 120, 120, 0.2);
+    margin: 2rem;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.date-div {
+    display: none;
+}
+
+.instructions {
+    padding: 1rem;
+}
+
+ul {
+    
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+nav ul {
+    margin: 0;
+    list-style: none;
+    padding: 1rem 0;   
+    display: flex;
+}
+
+li {
+    padding: 0.5rem 1rem;
+}
+
+input {
+    height: 1.5rem;
+    width: 15rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+a:hover {
+    color: #000000;
+}
+
+svg {
+    height: 2rem;
+    width: 2rem;
+}
+
+button {
+    margin-top: 1rem;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #438a8c;
+    color: #ffffff;
+    box-shadow: 0.5rem 0.5rem 1rem 0.01rem rgba(0, 0, 0, 0.5);
+    outline: none;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>NASA API</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <svg id="Layer_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m260 146h-32.521c1.645-6.392 2.521-13.094 2.521-20 0-44.183-35.817-80-80-80s-80 35.817-80 80h-20c-22.091 0-40 17.909-40 40s17.909 40 40 40h210c16.569 0 30-13.431 30-30s-13.431-30-30-30z" fill="#f0e4f6"/><circle cx="256" cy="286" fill="#fff" r="180"/>
+                            <path d="m106 306c-10.272 0-19.818 3.102-27.76 8.414 5.385 33.951 20.254 64.743 41.818 89.568 20.768-6.075 35.942-25.251 35.942-47.982 0-27.614-22.386-50-50-50z" fill="#e2e9ee"/><path d="m402.078 180.823c-11.347-15.732-25.17-29.555-40.901-40.901-9.062 5.162-15.177 14.903-15.177 26.078 0 16.569 13.431 30 30 30 11.175 0 20.916-6.115 26.078-15.177z" fill="#e2e9ee"/><g>
+                            <path d="m121.802 256.002c-.944 0-1.904-.135-2.856-.418-5.293-1.575-8.308-7.144-6.732-12.437 9.027-30.33 27.964-57.607 53.321-76.806 26.216-19.849 57.498-30.341 90.465-30.341 5.522 0 10 4.477 10 10s-4.478 10-10 10c-28.572 0-55.681 9.09-78.394 26.287-21.987 16.647-38.403 40.288-46.224 66.566-1.292 4.341-5.271 7.149-9.58 7.149z" fill="#e2e9ee"/></g><g fill="#e2e9ee">
+                            <circle cx="316" cy="186" r="10"/><circle cx="206" cy="206" r="10"/><circle cx="156" cy="287" r="15"/><circle cx="346" cy="226" r="20"/></g><path d="m472 366h-32.521c1.645-6.392 2.521-13.094 2.521-20 0-44.183-35.817-80-80-80s-80 35.817-80 80h-20c-22.091 0-40 17.909-40 40s17.909 40 40 40h210c16.569 0 30-13.431 30-30s-13.431-30-30-30z" fill="#f0e4f6"/>
+                            <path d="m472 356h-20.563c.367-3.313.563-6.651.563-10 0-12.792-2.688-24.966-7.521-35.996.998-7.916 1.521-15.982 1.521-24.004 0-104.766-85.233-190-190-190-7.01 0-13.928.394-20.743 1.137-12.252-36.308-46.402-61.137-85.257-61.137-46.246 0-84.451 35.063-89.441 80h-10.559c-27.57 0-50 22.43-50 50s22.43 50 50 50h29.364c-8.619 21.673-13.364 45.292-13.364 70 0 104.766 85.233 190 190 190 42.748 0 83.021-13.83 116.616-40h99.384c22.056 0 40-17.944 40-40s-17.944-40-40-40zm-422-160c-16.542 0-30-13.458-30-30s13.458-30 30-30h60c5.522 0 10-4.477 10-10s-4.478-10-10-10h-29.274c4.868-33.876 34.072-60 69.274-60 29.101 0 54.809 17.897 65.184 44.428-54.661 12.013-100.577 47.621-126.478 95.572zm206 260c-93.738 0-170-76.262-170-170s76.262-170 170-170c92.651 0 168.218 74.505 169.959 166.748-16.324-16.505-38.967-26.748-63.959-26.748-46.246 0-84.451 35.063-89.441 80h-10.559c-27.57 0-50 22.43-50 50s22.43 50 50 50h74.146c-24.456 13.147-51.687 20-80.146 20zm216-40h-210c-16.542 0-30-13.458-30-30s13.458-30 30-30h60c5.522 0 10-4.477 10-10s-4.478-10-10-10h-29.274c4.869-33.876 34.073-60 69.274-60 38.598 0 70 31.402 70 70 0 3.358-.246 6.7-.718 10h-29.282c-5.522 0-10 4.477-10 10s4.478 10 10 10h37.448c.013 0 .026.002.039.002.02 0 .039-.002.058-.002h32.455c11.028 0 20 8.972 20 20s-8.972 20-20 20z" fill="#6d92ac"/></g>
+                        </svg>
+                    </li>
+                    <li><a href="index.html">Today's Picture</a></li>
+                    <li><a href="date.html">Pick a Date</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="instructions">
+                <h1>{NASA APIS}</h1>
+                <p>Welcome to the NASA API portal. The objective of this site is to make NASA data, including imagery, 
+                    eminently accessible to application developers. The api.nasa.gov catalog is growing.</p>
+                <p>If you click the button, you will see the NASA picture for the day.</p>
+                <button class="button-space" onclick="buttonClicked()">Fetch API</button>
+            </div>
+            
+            <div class="img-div">
+                <h1 class="nasa-title"></h1>
+                <img class="nasa-img">
+                <p class="nasa-desc"></p>
+            </div>
+        </main>
+        <script src="js/script.js" async defer></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    </body>
+</html>
